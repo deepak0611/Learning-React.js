@@ -18,15 +18,15 @@ class App extends React.Component {
         <Nav/>   
         
         <Router>
-          <Route path='/' exact >
-            <Redirect to="/tours" />
+          <Route path={process.env.PUBLIC_URL + '/'} exact >
+            <Redirect to={process.env.PUBLIC_URL + '/tours'} />
           </Route>
-          <Route path='/birthdaytoday' exact component={Birthday}></Route>
-          <Route path='/FAQS' exact component={AccordianSet}></Route>
-          <Route path='/experience' exact component={Tab}></Route>
-          <Route path='/reviews' exact component={Slider}></Route>
-          <Route path='/tours' exact component={Tours}></Route>
-          <Route path='/menu' exact component={Menu}></Route>
+          <Route path={process.env.PUBLIC_URL + '/birthdaytoday'} exact component={Birthday}></Route>
+          <Route path={process.env.PUBLIC_URL + '/FAQS'} exact component={AccordianSet}></Route>
+          <Route path={process.env.PUBLIC_URL + '/experience'} exact component={Tab}></Route>
+          <Route path={process.env.PUBLIC_URL + '/reviews'} exact component={Slider}></Route>
+          <Route path={process.env.PUBLIC_URL + '/tours'} exact component={Tours}></Route>
+          <Route path={process.env.PUBLIC_URL + '/menu'} exact component={Menu}></Route>
         </Router>  
 
     </div>

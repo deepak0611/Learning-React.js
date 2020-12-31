@@ -36,7 +36,7 @@ class Nav extends React.Component{
                             const {id,url,text} = link;
                             return (
                                 <li key={id}>
-                                    <a href={url}>{text}</a>
+                                    <a href={process.env.PUBLIC_URL + url}>{text}</a>
                                 </li>
                             );                        
                         })}
