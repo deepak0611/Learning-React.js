@@ -28,7 +28,7 @@ class App extends React.Component {
           <Route path={process.env.PUBLIC_URL + '/tours'} exact component={Tours}></Route>
           <Route path={process.env.PUBLIC_URL + '/menu'} exact component={Menu}></Route>
         </Router>  
-
+ 
     </div>
     );
     
